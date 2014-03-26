@@ -9,8 +9,14 @@ strike {
 	color: gray;
 }
 
+div#headerButton{
+	/*background-color: rgba(78, 93, 108, 0.42);*/
+	background-color: transparent;
+}
 
-
+button#headerButton{
+	font-weight: bold;
+}
 
 
 
