@@ -6,15 +6,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Scrying Orb</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap-darkly.min.css">
         <style>
             body {
-                padding-top: 50px;
+                padding-top: 70px;
                 padding-bottom: 20px;
+                
+
             }
         </style>
         <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
@@ -26,7 +28,8 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <!-- navbar-collapse collapse navbar-inverse-collapse -->
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,13 +37,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">LoL Sales</a>
+          <a class="navbar-brand" href="#"><strong>Scrying Orb</strong></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Sale History</a></li>
+            <li><a href="#contact">Prediction History</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -54,54 +57,121 @@
               </ul>
             </li>
           </ul>
-          <form class="navbar-form navbar-right" role="search">
+          <form class="navbar-form navbar-right">
+			      <input type="text" class="form-control col-lg-8" placeholder="Champs/Skins">
+			    </form>
+<!--           <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
-              <input type="text" id="typeahead" class="form-control" placeholder="Search">
+              <input type="text" id="typeahead" class="form-control" placeholder="Search Champ/Skin">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form> -->
         </div><!--/.navbar-collapse -->
       </div>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
     <div class="container">
-      <!-- Example row of columns -->
+			<div id="headerButton" class="well well-sm row">
+
+				<div id="headerButton" class="col-sm-6 col-md-3">
+					<button id="headerButton" class="btn btn-primary btn-lg btn-block">Last Week</button>
+				</div>
+
+				<div id="headerButton" class="col-sm-6 col-md-3">
+					<button id="headerButton" class="btn btn-default btn-lg btn-block">This Week</button>
+				</div>
+
+				<div id="headerButton" class="col-sm-6 col-md-3">
+					<button id="headerButton" class="btn btn-default btn-lg btn-block">Next Week</button>
+				</div>
+
+				<div id="headerButton" class="col-sm-6 col-md-3">
+					<button id="headerButton" class="btn btn-default btn-lg btn-block">Bundles</button>
+				</div>
+
+			</div>
+
+      <!-- Sale Champs -->
       <div class="row">
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        <!-- Last Sale -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" src="img/champion/Elise.png" alt="...">
+            <div class="caption text-center">
+              <h3 class="text-success"><strong>Elise</strong></h3>
+              <p><strike>975</strike> 487 RP</p>
+              <p><a href="#" class="btn btn-primary btn-block" role="button">See History</a></p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" src="img/champion/Xerath.png" alt="...">
+            <div class="caption text-center">
+              <h3 class="text-success"><strong>Xerath</strong></h3>
+              <p><strike>880</strike> 440 RP</p>
+              <p><a href="#" class="btn btn-primary btn-block" role="button">See History</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" src="img/champion/Akali.png" alt="...">
+            <div class="caption text-center">
+              <h3 class="text-success"><strong>Akali</strong></h3>
+              <p><strike>790</strike> 395 RP</p>
+              <p><a href="#" class="btn btn-primary btn-block" role="button">See History</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Last Sale Skins -->
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" src="img/champion/Akali.png" alt="...">
+            <div class="caption text-center">
+              <h3 class="text-success"><strong>Blood Moon Akali</strong></h3>
+              <p><strike>975</strike> 487 RP</p>
+              <p><a href="#" class="btn btn-primary btn-block" role="button">See History</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" src="img/champion/Swain.png" alt="...">
+            <div class="caption text-center">
+              <h3 class="text-success"><strong>Northern Front Swain</strong></h3>
+              <p><strike>750</strike> 375 RP</p>
+              <p><a href="#" class="btn btn-primary btn-block" role="button">See History</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" src="img/champion/LeeSin.png" alt="...">
+            <div class="caption text-center">
+              <h3 class="text-success"><strong>Traditional Lee Sin</strong></h3>
+              <p><strike>520</strike> 260 RP</p>
+              <p><a href="#" class="btn btn-primary btn-block" role="button">See History</a></p>
+            </div>
+          </div>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; Scrying Orb 2014</p>
       </footer>
     </div> <!-- /container -->        
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
 
@@ -110,6 +180,9 @@
             // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             // g.src='//www.google-analytics.com/ga.js';
             // s.parentNode.insertBefore(g,s)}(document,'script'));
+
+            $( document ).ready(function() {
+          
             });
         </script>
     </body>
